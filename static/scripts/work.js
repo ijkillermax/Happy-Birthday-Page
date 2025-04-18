@@ -20,6 +20,8 @@ if (encryptedName) {
 
 }
 const revealBtn = document.getElementById("revealBtn");
+const createPageBtn = document.getElementById("createPageBtn");
+
 const intro = document.getElementById("intro");
 const mainContent = document.getElementById("mainContent");
 
@@ -27,6 +29,7 @@ const mainContent = document.getElementById("mainContent");
 revealBtn.addEventListener("click", () => {
   intro.style.display = "none";
   mainContent.style.display = "flex";
+  createPageBtn.style.display = "none";
   launchConfetti();
   createBalloons();
 });

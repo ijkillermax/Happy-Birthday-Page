@@ -54,6 +54,30 @@ h1 {
   color: #6b006b;
 }
 
+#createPageBtn {
+  font-family:cursive;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e194f8;
+  color: rgb(0, 0, 0);
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+#createPageBtn:hover {
+  color: rgb(217, 216, 216);
+  background-color: #580365;
+}
+
 .images {
   display: flex;
   gap: 15px;

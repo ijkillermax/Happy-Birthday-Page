@@ -20,11 +20,14 @@ function encryptAndDecrypt() {
     const decrypted = bytes.toString(CryptoJS.enc.Utf8);
 
     // Show outputs
-    document.getElementById("encryptedOutput").style.display = "block";
     document.getElementById("encodedOutput").style.display = "block";
-    document.getElementById("decryptedOutput").style.display = "block";
 
-    document.getElementById("encryptedOutput").innerHTML = `<strong>Encrypted:</strong> ${encrypted}`;
     document.getElementById("encodedOutput").innerHTML = `<strong>URL Encoded:</strong> ${encoded}`;
-    document.getElementById("decryptedOutput").innerHTML = `<strong>Decrypted:</strong> ${decrypted}`;
+
+    // Shareable URL
+    const baseURL = window.location.origin;
+    const shareURL = `${baseURL}?name=${encoded}`;
+
+    document.getElementById("shareableURL").style.display = "block";
+    document.getElementById("shareableURL").innerHTML = `<strong>Shareable URL:</strong> <a href="${shareURL}" target="_blank">${shareURL}</a>`;
 }
