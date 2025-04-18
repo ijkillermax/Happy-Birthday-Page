@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="static/images/happy-birthday.png" type="image/x-icon">
+  <link rel="stylesheet" href="static/css/indexStyle.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <!-- Encryption library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <title>Wish You Happy Birthday!</title>
+</head>
+<body>
+    <!-- Intro Page -->
+  <div id="intro">
+    <h1 id="surpriseText">🎉 Surprise! 🎉</h1>
+    <button id="revealBtn">Click to open your surprise 👉</button>
+  </div>
+
+  <!-- Birthday Page -->
+  <div id="mainContent">
+    <h1 id="wish">Happy Birthday!</h1>
+
+    <!-- Birthday-page images -->
+    <div class="images">
+      <img src="static/images//birthday-cake.png" alt="cake" />
+      <img src="static/images/party-hat.png" alt="candles" />
+      <img src="static/images/gift.png" alt="gift" />
+    </div>
+  </div>
+  <div class="balloons" id="balloons"></div>
+  
+  <script src="static/scripts/work.js"></script>
+</body>
+</html>

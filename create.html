@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AES Encryption Demo</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include CryptoJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <link rel="stylesheet" href="static/css/createStyle.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>AES Encrypt & Decrypt</h2>
+
+    <label for="name">Enter Name:</label>
+    <input type="text" id="name" placeholder="e.g. John" />
+
+    <button onclick="encryptAndDecrypt()">Encrypt & Decrypt</button>
+
+    <div class="result" id="encryptedOutput" style="display:none;"></div>
+    <div class="result" id="encodedOutput" style="display:none;"></div>
+    <div class="result" id="decryptedOutput" style="display:none;"></div>
+  </div>
+
+  <script src="static/scripts/encrypt.js"></script>
+</body>
+</html>
