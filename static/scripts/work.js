@@ -17,16 +17,23 @@ if (encryptedName) {
   catch (e) {
     console.log("Error in decryption of query param name");
   }
-
 }
+
 const revealBtn = document.getElementById("revealBtn");
 const createPageBtn = document.getElementById("createPageBtn");
 
 const intro = document.getElementById("intro");
 const mainContent = document.getElementById("mainContent");
 
-//Event listener over button
+// Event listener for surprise button
 revealBtn.addEventListener("click", () => {
+  // Play surprise sound
+  const audio = document.getElementById("surpriseSound");
+  if (audio) {
+    audio.play();
+  }
+
+  // Transition to birthday content
   intro.style.display = "none";
   mainContent.style.display = "flex";
   createPageBtn.style.display = "none";
@@ -34,9 +41,9 @@ revealBtn.addEventListener("click", () => {
   createBalloons();
 });
 
-//Launch Confetti
+// Launch Confetti
 function launchConfetti() {
-  const duration = 5 * 1000;
+  const duration = 8 * 1000;
   const animationEnd = Date.now() + duration;
   const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 9999 };
 
